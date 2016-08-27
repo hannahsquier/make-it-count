@@ -1,12 +1,14 @@
 <h1>Make Your Vote Count!</h1>
 <div id="locationField">
-	<%= form_for :voter_stats, url: voter_stats_path do |form| %>
-	  <%= form.text_field :address, id: "autocomplete", 
-	  															placeholder: "Enter your address", 
-	  															onFocus: "geolocate()" %>
-	  <%= form.submit "Go!" %>
+  <%= form_for :voter_stats, url: voter_stats_path do |form| %>
+    <%= form.text_field :address, 
+                        id: "autocomplete", 
+                        placeholder: "Enter your address", 
+                        onFocus: "geolocate()" %>
+                        
+    <%= form.submit "Go!" %>
 
-	<% end  %>
+  <% end  %>
 </div>
 
  

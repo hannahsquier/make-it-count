@@ -1,23 +1,23 @@
 class VoterStatsController < ApplicationController
-	def new
+  def new
 
-	end
+  end
 
-	def show
-		
+  def show
+    
 
-	end
+  end
 
-	def create
-		
-		@address = Address.new(voter_stats_params[:address])
-		@state = @address.get_state
-		redirect_to address_voter_stats_path(@address.address.parameterize)
-	end
+  def create
+    
+    @address = Address.new(voter_stats_params[:address])
+    @state = @address.get_state
+    redirect_to address_voter_stats_path(@address.address.parameterize)
+  end
 
-	private
+  private
 
-	def voter_stats_params
-		params.require(:voter_stats).permit(:address)
-	end
+  def voter_stats_params
+    params.require(:voter_stats).permit(:address)
+  end
 end
