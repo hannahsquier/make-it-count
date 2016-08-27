@@ -5,7 +5,7 @@ class VoterStatsController < ApplicationController
 
   def show
 
-    @data = StateData.new(params[:state], "sample.json")
+    @data = StateData.new(params[:state])
 
   end
 

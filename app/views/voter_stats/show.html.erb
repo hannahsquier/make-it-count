@@ -6,4 +6,16 @@
 
   President Trends: <%= @data.get_president_trends %><br>
   Senator Trends: <%= @data.get_senator_trends %><br>
+
+  <% @data.get_senator_info.each do |senator| %>
+
+    <%= senator["name"] %><br>
+    <%= image_tag senator["photoUrl"] %><br>
+    <%= senator["phones"] %><br>
+    <%= senator["channels"] %><br>
+    <%= senator["urls"] %><br>
+    <%= senator["address"] %><br>
+    <%= senator["party"] %><br>
+    <hr>
+  <% end %>
 </div>
