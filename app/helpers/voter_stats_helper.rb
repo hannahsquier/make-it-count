@@ -1,0 +1,2 @@
+module VoterStatsHelper
+end

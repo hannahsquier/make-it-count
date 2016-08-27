@@ -1,0 +1,7 @@
+<h1>Make Your Vote Count!</h1>
+
+<%= form_for :voter_stats, url: voter_stats_path do |form| %>
+  <%= form.text_field :address %>
+  <%= form.submit  %>
+
+<% end  %>
