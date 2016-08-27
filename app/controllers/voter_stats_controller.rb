@@ -9,6 +9,7 @@ class VoterStatsController < ApplicationController
 	end
 
 	def create
+		
 		@address = Address.new(voter_stats_params[:address])
 		@state = @address.get_state
 		redirect_to address_voter_stats_path(@address.address.parameterize)

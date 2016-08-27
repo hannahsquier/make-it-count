@@ -7,4 +7,5 @@ class Address
 	def get_state
 
 	end
+
 end
