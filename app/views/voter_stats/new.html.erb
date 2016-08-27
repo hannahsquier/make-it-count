@@ -1,15 +1,22 @@
-<h1>Make Your Vote Count!</h1>
-<div id="locationField">
-  <%= form_for :voter_stats, url: voter_stats_path do |form| %>
-    <%= form.text_field :address, 
-                        id: "autocomplete", 
-                        placeholder: "Enter your address", 
-                        onFocus: "geolocate()" %>
-                        
-    <%= form.submit "Go!" %>
+<div class="container main-thing">
+  <div class="intro-text">
+    <div class="intro-heading">
+      <h1>Make Your Vote Count!</h1>
+    </div>
 
-  <% end  %>
+
+    <div id="locationField">
+      <%= form_for :voter_stats, url: voter_stats_path, html: {class: "form"} do |form| %>
+        <%= form.text_field :address,
+                            id: "autocomplete",
+                            placeholder: "Enter your address",
+                            onFocus: "geolocate()" %>
+
+        <%= form.submit "Go!" %>
+
+      <% end  %>
+    </div>
+  </div>
 </div>
 
- 
 <%= render "autocomplete_js" %>

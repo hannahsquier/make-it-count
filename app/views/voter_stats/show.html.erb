@@ -1,1 +1,9 @@
-<%= params[:address] %>
+<div class="main-thing">
+  <%= params[:address] %>
+  Voter Power Index: <%= @data.get_voter_power_index %><br>
+
+  Tipping Point Chance: <%= @data.get_tipping_point_chance %><br>
+
+  President Trends: <%= @data.get_president_trends %><br>
+  Senator Trends: <%= @data.get_senator_trends %><br>
+</div>

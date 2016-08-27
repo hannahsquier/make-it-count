@@ -5,7 +5,7 @@ class Address
   end
 
   def get_state
-
+    @address.split(",")[-2].strip.downcase
   end
 
 end

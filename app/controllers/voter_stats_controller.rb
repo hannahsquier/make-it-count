@@ -4,15 +4,18 @@ class VoterStatsController < ApplicationController
   end
 
   def show
-    
+
+    @data = StateData.new(params[:state], "sample.json")
 
   end
 
   def create
-    
+
     @address = Address.new(voter_stats_params[:address])
     @state = @address.get_state
-    redirect_to address_voter_stats_path(@address.address.parameterize)
+    redirect_to address_voter_stats_path(
+            state: @address.get_state,
+             address: @address.address.parameterize)
   end
 
   private

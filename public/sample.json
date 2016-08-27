@@ -1,0 +1,30 @@
+{
+  "ca":{
+    "voter_power_index":4.1,
+    "senators":[
+      {
+        "reelection":false,
+        "photo_url":"http://example.com",
+        "name":"Diane Fienstein",
+        "contested":false
+      }
+    ],
+    "tipping_point_chance":"6.2%",
+    "senator_trends":"Competitive",
+    "president_trends":"Likely Dem"
+  },
+  "dc":{
+    "voter_power_index":4.1,
+    "senators":[
+      {
+        "reelection":false,
+        "photo_url":"http://example.com",
+        "name":"Diane Fienstein",
+        "contested":false
+      }
+    ],
+    "tipping_point_chance":"6.2%",
+    "senator_trends":"Competitive",
+    "president_trends":"Likely Dem"
+  }
+}
