@@ -3,6 +3,25 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+ .senator-image {
+  width: 300px;
+  border-radius: 50%;
+ }
+
+ .blue-border {
+  border: 20px solid #8DC5DE;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+ }
+
+ .sr-icons {
+  margin: 20px;
+ }
+
+ .text-white {
+  color: white;
+ }
 html,
 body {
   height: 100%;
@@ -57,7 +76,7 @@ p {
 }
 
 .bg-dark {
-  background-color: #222222;
+  background-color: #eeeeee;
   color: white;
 }
 .text-faded {
@@ -210,6 +229,10 @@ header .header-content .header-content-inner p {
 }
 .text-primary {
   color: #B22222;
+}
+
+.hr-secondary {
+  border-color: #8DC5DE;
 }
 
 .text-secondary {
