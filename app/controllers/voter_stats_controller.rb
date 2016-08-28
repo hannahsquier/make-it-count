@@ -6,7 +6,7 @@ class VoterStatsController < ApplicationController
   def show
 
     @data = StateData.new(params[:state])
-
+    @rep = @data.get_rep_data(params[:address])
   end
 
   def create

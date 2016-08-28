@@ -12,6 +12,19 @@ module VoterStatsHelper
     channels[channel["type"]]
   end
 
+  def channel_mapper_rep(channel)
+    channels = {
+
+    "Twitter" => link_to("<i class='fa fa-3x fa-twitter text-primary sr-icons'></i>".html_safe, "https://www.twitter.com/#{channel['id']}"),
+
+    "YouTube" => link_to("<i class='fa fa-3x fa-youtube text-primary sr-icons'></i>".html_safe, "https://www.youtube.com/#{channel['id']}"),
+
+    "Facebook" => link_to("<i class='fa fa-3x fa-facebook text-primary sr-icons'></i>".html_safe, "https://www.facebook.com/#{channel['id']}")
+    }
+
+    channels[channel["type"]]
+  end
+
   def get_white_house_image(leaning)
     map  = {
       "Much more Democratic" => "white-house-dark-blue.png",

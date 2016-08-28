@@ -1,0 +1,33 @@
+
+
+ <div class="col-xs-12 text-center">
+
+    <div class="blue-border">
+
+
+    <h1 style="font-size: 60px;"><%= rep["name"] %></h1>
+
+    <% if rep["photoUrl"] %>
+      <%= image_tag rep["photoUrl"], class: "senator-image" %>
+
+    <% end %>
+
+    <div class="row">
+
+
+    <h3><%= rep["party"] %></h3>
+
+      <div class="row">
+        <p><i class="fa fa-phone  sr-contact"></i> <%= rep["phones"].first %></p>
+      </div>
+
+      <div class="row">
+        <% rep["channels"].each do |channel| %>
+          <%= channel_mapper_rep(channel) %>
+        <% end %>
+
+        <%= link_to("<i class='fa fa-3x fa-globe text-primary sr-icons'></i>".html_safe, rep["urls"].first ) %>
+      </div>
+    </div>
+
+</div>
