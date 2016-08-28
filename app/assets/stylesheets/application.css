@@ -156,9 +156,6 @@ header .header-content .header-content-inner p {
     padding: 0 50px;
   }
 
-  .show-header {
-    top: 10%;
-  }
   header .header-content .header-content-inner {
     max-width: 1000px;
     margin-left: auto;
