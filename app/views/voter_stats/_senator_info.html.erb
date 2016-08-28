@@ -2,24 +2,42 @@
 
  <div class="col-lg-6 col-md-12 text-center">
 
-        <div class="blue-border">
+    <div class="blue-border">
 
 
-        <h1 style="font-size: 60px;"><%= senator["name"] %></h1>
-        <%= image_tag senator["photoUrl"], class: "senator-image" %>
+    <h1 style="font-size: 60px;"><%= senator["name"] %></h1>
 
-        <h3> <%= senator["party"] %></h3>
 
-        <h4><%= link_to senator["urls"][0], senator["urls"][0]  %></h4>
-          <div class="row">
-            <p><i class="fa fa-phone  sr-contact"></i> <%= senator["phones"].first %></p>
-          </div>
+    <%= image_tag senator["photoUrl"], class: "senator-image" %>
 
-          <div class="row">
-            <% senator["channels"].each do |channel| %>
-              <%= channel_mapper(channel) %>
-            <% end %>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-xs-6">
+      <% if senator["up_for_reelection"] %>
+        <%= image_tag "ballot2.png", class:
+        "contested invert" %><h5>Up For Re-Election!</h5>
+      <% end %>
+      </div>
+       <div class="col-xs-6">
+      <% if senator["contested"] %>
+        <%= image_tag "contested.svg", class:
+        "contested invert" %><h5>Competetive Race</h5>
+      <% end %>
+      </div>
+    </div>
+
+    <h3><%= senator["party"] %></h3>
+
+      <div class="row">
+        <p><i class="fa fa-phone  sr-contact"></i> <%= senator["phones"].first %></p>
+      </div>
+
+      <div class="row">
+        <% senator["channels"].each do |channel| %>
+          <%= channel_mapper(channel) %>
+        <% end %>
+
+        <%= link_to("<i class='fa fa-3x fa-globe text-white sr-icons'></i>".html_safe, senator["urls"].first ) %>
+      </div>
+    </div>
 
 </div>
