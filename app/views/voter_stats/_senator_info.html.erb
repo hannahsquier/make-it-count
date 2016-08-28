@@ -7,8 +7,10 @@
 
     <h1 style="font-size: 60px;"><%= senator["name"] %></h1>
 
+    <% if senator["photoUrl"] %>
+      <%= image_tag senator["photoUrl"], class: "senator-image" %>
 
-    <%= image_tag senator["photoUrl"], class: "senator-image" %>
+    <% end %>
 
     <div class="row">
       <div class="col-xs-6">

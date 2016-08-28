@@ -8,6 +8,13 @@
   border-radius: 50%;
  }
 
+ #arrow {
+  position: absolute;
+  top: 260%;
+  text-align: center;
+  left: 50%;
+ }
+
  .contested {
   height: 60px;
  }
