@@ -1,11 +1,11 @@
  <% senator = @data.get_senator_info[n] %>
 
  <div class="col-lg-6 col-md-12 text-center">
-    <div class="service-box">
+
         <div class="blue-border">
 
 
-        <h1><%= senator["name"] %></h1>
+        <h1 style="font-size: 60px;"><%= senator["name"] %></h1>
         <%= image_tag senator["photoUrl"], class: "senator-image" %>
 
         <h3> <%= senator["party"] %></h3>
@@ -21,5 +21,5 @@
             <% end %>
           </div>
         </div>
-    </div>
+
 </div>
