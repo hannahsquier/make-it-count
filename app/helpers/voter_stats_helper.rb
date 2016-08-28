@@ -11,4 +11,26 @@ module VoterStatsHelper
 
     channels[channel["type"]]
   end
+
+  def get_white_house_image(leaning)
+    map  = {
+      "Much more Democratic" => "white-house-dark-blue.png",
+      "Somewhat more Democratic" => "white-house-light-blue.png",
+      "Like the country as a whole" => "white-house-neutral.png",
+      "Much more Republican" => "white-house-dark-red.png",
+      "Somewhat more Republican" => "white-house-light-red.png",
+    }
+    map[leaning]
+
+  end
+
+    def get_senate_image(leaning)
+    map  = {
+      "Likely Democratic" => "senate-dark-blue.png",
+      "Competitive" => "senate-neutral.png",
+      "Likely Republican" => "senate-dark-red.png",
+    }
+    map[leaning]
+
+  end
 end
