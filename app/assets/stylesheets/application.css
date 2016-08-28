@@ -10,7 +10,7 @@
 
  #arrow {
   position: absolute;
-  top: 260%;
+  bottom: -140%;
   text-align: center;
   left: 50%;
  }
