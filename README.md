@@ -1,4 +1,4 @@
-# 💻 [Make it Count!](make-it-count.herokuapp.com)
+# 🗳[Make it Count!](make-it-count.herokuapp.com)
 
  A multi-platform tool to help inspire people to go to the polls in this historic 2016 election. This elegant tool informs and motivates Americans (especially in swing states) to learn about and participate in the electoral process. By integrating a big and beautiful web app with a Messenger chat bot that, users gain valuable insights into how much their vote counts.
 
